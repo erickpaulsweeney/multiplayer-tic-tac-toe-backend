@@ -14,7 +14,7 @@ const httpServer = app.listen(process.env.PORT || 8000, () =>
 
 const io = require("socket.io")(httpServer, {
     cors: {
-        origin: "http://localhost:3000",
+        origin: "https://multiplayer-tic-tac-toe-mern.netlify.app/",
         methods: ["GET", "POST"],
     },
 });
